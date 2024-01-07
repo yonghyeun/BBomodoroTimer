@@ -1,0 +1,135 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.5s;
+  user-select: none;
+  background: radial-gradient(circle, #cd73d9, #f896d8);
+}
+
+#box {
+  margin: 50px auto;
+  margin-top: 200px;
+  width: 500px;
+  height: 500px;
+  border-radius: 20%;
+  position: relative;
+  background-color: #24a669;
+  /* flexbox 를 이용해 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px white;
+  transition: all 1s;
+}
+
+/* 분침 모양 관련 속성 */
+.minuteHand {
+  position: absolute;
+}
+
+.thin {
+  width: 80%;
+  border: 1px solid black;
+}
+
+.thick {
+  width: 90%;
+  border: 1.5px solid black;
+}
+
+/* 분침 텍스트 관련 속성 */
+
+.minuteText {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 분침 일부분만 보이도록 가려주는 속성 */
+
+#circleForHide {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #f2b705;
+  border-radius: 100%;
+}
+
+/* 시작 및 정지 버튼 */
+
+.play-button {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-radius: 100%;
+  border: 0px;
+  font-size: 40px;
+  color: red;
+  background-color: white;
+  box-shadow: 0px 0px 30px white;
+
+  transition: box-shadow 0.5s;
+  z-index: 1;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+/* 타이머 전광판 */
+
+#board {
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+[id*='text'] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/* 타이머 런닝 타임 관련 속성 */
+
+.running-time {
+  position: absolute;
+  width: 25%;
+  height: 20px;
+  background-color: #99d9f2;
+}
+
+/* 초기화 버튼 관련 속성 */
+
+#initialize-button {
+  margin: 10px auto;
+  font-size: 50px;
+  background-color: white;
+  border: 0px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px white;
+  transition: box-shadow 1s ease-out;
+}
+
+#initialize-button:hover {
+  box-shadow: 0px 0px 10px black;
+}
+/* 뽀모 횟수 카운트 하기 */
+
+#count-box {
+  margin: 10px auto;
+  font-size: 50px;
+}
+
+#bbomo-count {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
