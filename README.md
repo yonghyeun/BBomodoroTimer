@@ -1,6 +1,6 @@
 # BBomodoroTimer
 
-<img src = 'https://velog.velcdn.com/images/yonghyeun/post/88c574cb-bf01-4b4a-bf0f-018dcc00da92/image.gif'>
+<img src = 'img.gif' alt = 'timer.gif'>
 
 뽀모도로 타이머를 토이프로젝트로 만들어보았습니다.
 
